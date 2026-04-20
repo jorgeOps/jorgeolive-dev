@@ -15,8 +15,12 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: 'Jorge Olive - Diseño Web Personalizado | Custom Web Design',
-  description: 'Diseño web personalizado para pequeños negocios. Portfolio de proyectos reales con Vercel. Custom web design for small businesses.',
+  metadataBase: new URL('https://jorgeolive.com'),
+  title: {
+    default: 'Jorge Olive - Diseño Web Personalizado | Custom Web Design',
+    template: '%s | Jorge Olive',
+  },
+  description: 'Diseño web personalizado para negocios que quieren destacar. Desarrollo sitios web únicos con Next.js, React y despliegue en Vercel. Custom web design for businesses that want to stand out.',
   keywords: [
     'diseño web',
     'web design',
@@ -27,19 +31,58 @@ export const metadata: Metadata = {
     'Vercel',
     'Next.js',
     'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'desarrollador web',
+    'web developer',
+    'freelance',
+    'Jorge Olive',
   ],
-  authors: [{ name: 'Jorge Olive' }],
+  authors: [{ name: 'Jorge Olive', url: 'https://jorgeolive.com' }],
   creator: 'Jorge Olive',
+  publisher: 'Jorge Olive',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: 'Jorge Olive - Diseño Web Personalizado',
-    description: 'Creo páginas web únicas para pequeños negocios',
     type: 'website',
     locale: 'es_ES',
     alternateLocale: ['en_US'],
+    url: 'https://jorgeolive.com',
+    title: 'Jorge Olive - Diseño Web Personalizado',
+    description: 'Diseño web personalizado para negocios que quieren destacar. Desarrollo sitios web únicos con Next.js y React.',
+    siteName: 'Jorge Olive',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jorge Olive - Diseño Web Personalizado',
+    description: 'Diseño web personalizado para negocios que quieren destacar',
+    creator: '@jorgeolive',
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
+  manifest: '/manifest.json',
+  verification: {
+    // Añade aquí tus códigos de verificación cuando los tengas
+    // google: 'tu-codigo-de-verificacion',
+    // yandex: 'tu-codigo-yandex',
+    // bing: 'tu-codigo-bing',
   },
 };
 
@@ -50,6 +93,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className={`${notoSerif.variable} ${manrope.variable}`}>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#1C1B1F" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+      </head>
       <body className="bg-surface text-on-surface antialiased">{children}</body>
     </html>
   );
