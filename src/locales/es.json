@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "home": {
+    "hero": {
+      "greeting": "Hola, soy Jorge",
+      "title": "No diseño plantillas. Construyo sitios web pensando en el negocio que hay detrás.",
+      "subtitle": "Trabajo directamente con clientes que buscan algo más que una web funcional: quieren una herramienta que refleje quiénes son y les ayude a crecer.",
+      "note": "Ingeniero de Datos & IA a nivel profesional, con experiencia en el diseño y desarrollo web. He pasado por proyectos de todo tipo: desde arquitectura y salud hasta banca y e-commerce.",
+      "cta": "Hablemos de tu proyecto"
+    },
+    "philosophy": {
+      "title": "Cómo trabajo",
+      "principles": [
+        {
+          "label": "Transparencia total",
+          "text": "Ves cómo va quedando tu web en tiempo real. Sin sorpresas al final."
+        },
+        {
+          "label": "A medida, siempre",
+          "text": "Cada línea de código pensada para tu caso. Todo personalizable."
+        },
+        {
+          "label": "Tech moderna",
+          "text": "React, Next.js, despliegue en Vercel. Rápido, escalable, profesional."
+        }
+      ]
+    },
+    "projects": {
+      "intro": "He trabajado con arquitectos, veterinarios, streamers y agencias de viajes. Cada proyecto con sus propias necesidades, todos con el mismo criterio:",
+      "criteria": "código limpio, diseño que funciona y entrega sin rodeos.",
+      "title": "Trabajo reciente",
+      "viewLive": "Visitar",
+      "legacy": "Archivado"
+    },
+    "difference": {
+      "title": "Por qué no soy una agencia",
+      "text": "Este no es un servicio profesional corporativo. Soy un desarrollador independiente que crea páginas web personalizadas: hablo directamente contigo, entiendo tu negocio y construyo la solución. Todo 1:1 para hacer que tu web sea exactamente como la imaginabas.",
+      "quote": "Tú pon la idea; yo pongo el código. Si tu visión está al 100%, las limitaciones técnicas no existen."
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "subtitle": "Soluciones web adaptadas a tus necesidades",
+    "disclaimer": "Este no es un servicio profesional corporativo. Soy un desarrollador independiente que crea páginas web personalizadas con pasión y dedicación.",
+    "basic": {
+      "title": "Web Básica",
+      "description": "Página web estática y moderna para tu negocio",
+      "features": [
+        "Diseño personalizado y responsive",
+        "Seguimiento en tiempo real del desarrollo",
+        "Despliegue en la nube incluido",
+        "Dominio personalizado opcional",
+        "Optimización SEO básica",
+        "Sin base de datos ni backend"
+      ],
+      "ideal": "Ideal para: Restaurantes, peluquerías, clínicas, portfolios, landing pages"
+    },
+    "advanced": {
+      "title": "Web Avanzada",
+      "description": "Aplicación web completa con funcionalidades dinámicas",
+      "features": [
+        "Todo lo incluido en Web Básica",
+        "Base de datos y backend personalizado",
+        "Sistema de gestión de contenidos",
+        "Formularios con almacenamiento",
+        "Panel de administración",
+        "Integraciones con APIs externas"
+      ],
+      "ideal": "Ideal para: E-commerce, sistemas de reservas, plataformas de membresía"
+    },
+    "seo": {
+      "title": "Gestión SEO y Google",
+      "description": "Mejora tu visibilidad en búsquedas locales",
+      "features": [
+        "Configuración de Google My Business",
+        "Optimización para Google Maps",
+        "Estrategia de palabras clave locales",
+        "Informes mensuales de rendimiento"
+      ],
+      "ideal": "Ideal para: Negocios locales que quieren más clientes de su zona"
+    },
+    "process": {
+      "title": "Proceso de Trabajo",
+      "step1": {
+        "title": "Consulta Inicial",
+        "description": "Hablamos sobre tu negocio, objetivos y preferencias de diseño"
+      },
+      "step2": {
+        "title": "Desarrollo Transparente",
+        "description": "Puedes ver cómo va quedando tu web en tiempo real y solicitar cambios"
+      },
+      "step3": {
+        "title": "Entrega y Despliegue",
+        "description": "Tu web lista para usar con dominio configurado si lo deseas"
+      }
+    }
+  },
+  "contact": {
+    "title": "Hablemos de Tu Proyecto",
+    "subtitle": "Cuéntame qué necesitas y te ayudaré a crear la web perfecta para tu negocio",
+    "whatsapp": {
+      "text": "O escríbeme por WhatsApp directamente",
+      "button": "Abrir WhatsApp"
+    },
+    "form": {
+      "name": "Nombre",
+      "email": "Email",
+      "business": "Tipo de Negocio",
+      "message": "Cuéntame sobre tu proyecto",
+      "send": "Enviar Mensaje"
+    },
+    "info": {
+      "title": "Información",
+      "response": "Respondo en menos de 24 horas",
+      "meeting": "Primera consulta sin compromiso",
+      "flexible": "Presupuestos flexibles según necesidades"
+    }
+  },
+  "footer": {
+    "built": "Diseñado y desarrollado por Jorge Olive",
+    "year": "2026"
+  }
+}

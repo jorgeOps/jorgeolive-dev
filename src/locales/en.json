@@ -1,0 +1,127 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "greeting": "Hi, I'm Jorge",
+      "title": "I don't design templates. I build websites thinking about the business behind them.",
+      "subtitle": "I work directly with clients looking for more than a functional site: they want a tool that reflects who they are and helps them grow.",
+      "note": "Data & AI Engineer with professional experience in web design and development. I've worked across all kinds of projects: from architecture and healthcare to banking and e-commerce.",
+      "cta": "Let's talk about your project"
+    },
+    "philosophy": {
+      "title": "How I work",
+      "principles": [
+        {
+          "label": "Full transparency",
+          "text": "You see your website progress in real-time. No surprises at the end."
+        },
+        {
+          "label": "Always custom",
+          "text": "Every line of code crafted for your case. No template drag-and-drop."
+        },
+        {
+          "label": "Modern tech",
+          "text": "React, Next.js, Vercel deployment. Fast, scalable, professional."
+        }
+      ]
+    },
+    "projects": {
+      "intro": "I've worked with architects, veterinarians, streamers and travel agencies. Each project with its own needs, all with the same criterion:",
+      "criteria": "clean code, design that works and straightforward delivery.",
+      "title": "Recent work",
+      "viewLive": "Visit →",
+      "legacy": "Archived"
+    },
+    "difference": {
+      "title": "Why I'm not an agency",
+      "text": "I don't do corporate layers or generic services. You get a dedicated developer building your site from the ground up. We talk directly, I dive deep into your business, and I build the solution myself. It’s a 1:1 partnership designed to ensure your website turns out exactly how you envisioned it.",
+      "quote": "You bring the vision; I bring the code. As long as you know exactly what you want, technical limits don't exist."
+    }
+  },
+  "services": {
+    "title": "Services",
+    "subtitle": "Web solutions tailored to your needs",
+    "disclaimer": "This is not a corporate professional service. I'm an independent developer who creates personalized websites with passion and dedication.",
+    "basic": {
+      "title": "Basic Website",
+      "description": "Modern static website for your business",
+      "features": [
+        "Custom responsive design",
+        "Real-time development tracking",
+        "Cloud deployment included",
+        "Optional custom domain",
+        "Basic SEO optimization",
+        "No database or backend"
+      ],
+      "ideal": "Ideal for: Restaurants, salons, clinics, portfolios, landing pages"
+    },
+    "advanced": {
+      "title": "Advanced Website",
+      "description": "Full web application with dynamic features",
+      "features": [
+        "Everything in Basic Website",
+        "Custom database and backend",
+        "Content management system",
+        "Forms with data storage",
+        "Admin dashboard",
+        "External API integrations"
+      ],
+      "ideal": "Ideal for: E-commerce, booking systems, membership platforms"
+    },
+    "seo": {
+      "title": "SEO & Google Management",
+      "description": "Improve your visibility in local searches",
+      "features": [
+        "Google My Business setup",
+        "Google Maps optimization",
+        "Local keyword strategy",
+        "Monthly performance reports"
+      ],
+      "ideal": "Ideal for: Local businesses wanting more customers from their area"
+    },
+    "process": {
+      "title": "Work Process",
+      "step1": {
+        "title": "Initial Consultation",
+        "description": "We discuss your business, goals, and design preferences"
+      },
+      "step2": {
+        "title": "Transparent Development",
+        "description": "You can see your website progress in real-time and request changes"
+      },
+      "step3": {
+        "title": "Delivery & Deployment",
+        "description": "Your website ready to use with domain configured if desired"
+      }
+    }
+  },
+  "contact": {
+    "title": "Let's Talk About Your Project",
+    "subtitle": "Tell me what you need and I'll help you create the perfect website for your business",
+    "whatsapp": {
+      "text": "Or message me directly on WhatsApp",
+      "button": "Open WhatsApp"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "business": "Business Type",
+      "message": "Tell me about your project",
+      "send": "Send Message"
+    },
+    "info": {
+      "title": "Information",
+      "response": "I respond within 24 hours",
+      "meeting": "First consultation with no commitment",
+      "flexible": "Flexible budgets based on needs"
+    }
+  },
+  "footer": {
+    "built": "Designed and developed by Jorge Olive",
+    "year": "2026"
+  }
+}
