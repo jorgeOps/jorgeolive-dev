@@ -54,12 +54,21 @@ export const metadata: Metadata = {
     title: 'Jorge Olive - Diseño Web Personalizado',
     description: 'Diseño web personalizado para negocios que quieren destacar. Desarrollo sitios web únicos con Next.js y React.',
     siteName: 'Jorge Olive',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Jorge Olive - Diseño Web Personalizado',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Jorge Olive - Diseño Web Personalizado',
     description: 'Diseño web personalizado para negocios que quieren destacar',
     creator: '@jorgeolive',
+    images: ['/og-image.png'],
   },
   robots: {
     index: true,

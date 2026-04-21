@@ -1,19 +1,48 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Edge runtime config for Vercel
+export const runtime = 'nodejs';
+export const dynamic = 'force-dynamic';
+
+// GET handler for testing
+export async function GET() {
+  return NextResponse.json({
+    status: 'ok',
+    message: 'Contact API is working',
+    hasApiKey: !!process.env.RESEND_API_KEY
+  });
+}
 
 export async function POST(req: Request) {
   try {
+    // Log para debugging
+    console.log('📧 Contact form submission received');
+
     const { name, email, business, message } = await req.json();
 
     // Validación básica
     if (!name || !email || !message) {
+      console.log('❌ Missing required fields');
       return NextResponse.json(
         { error: 'Missing required fields' },
         { status: 400 }
       );
     }
+
+    // Verificar API key
+    if (!process.env.RESEND_API_KEY) {
+      console.error('❌ RESEND_API_KEY not configured');
+      return NextResponse.json(
+        { error: 'Email service not configured' },
+        { status: 500 }
+      );
+    }
+
+    console.log('✓ Sending email to:', 'jorgeolivepalacios@gmail.com');
+
+    // Inicializar Resend dentro de la función (lazy loading)
+    const resend = new Resend(process.env.RESEND_API_KEY);
 
     // Enviar email usando Resend
     const data = await resend.emails.send({
@@ -140,11 +169,15 @@ Responder a: ${email}
       `,
     });
 
+    console.log('✓ Email sent successfully');
     return NextResponse.json({ success: true, data });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('❌ Error sending email:', error);
     return NextResponse.json(
-      { error: 'Failed to send email' },
+      {
+        error: 'Failed to send email',
+        details: error instanceof Error ? error.message : 'Unknown error'
+      },
       { status: 500 }
     );
   }
