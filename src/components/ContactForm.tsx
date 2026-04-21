@@ -31,15 +31,35 @@ export function ContactForm({ translations }: ContactFormProps) {
       message: formData.get('message'),
     };
 
-    setTimeout(() => {
-      console.log('Form data:', data);
-      setStatus('success');
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      setStatus('success');
+      (e.target as HTMLFormElement).reset();
+
+      // Reset to idle after 5 seconds
       setTimeout(() => {
         setStatus('idle');
-        (e.target as HTMLFormElement).reset();
-      }, 3000);
-    }, 1000);
+      }, 5000);
+    } catch (error) {
+      console.error('Error:', error);
+      setStatus('error');
+
+      // Reset to idle after 5 seconds
+      setTimeout(() => {
+        setStatus('idle');
+      }, 5000);
+    }
   };
 
   return (
@@ -79,13 +99,29 @@ export function ContactForm({ translations }: ContactFormProps) {
           className="w-full"
           disabled={status === 'sending'}
         >
-          {status === 'sending' ? '...' : status === 'success' ? '✓' : translations.send}
+          {status === 'sending' ? 'Enviando... / Sending...' : status === 'success' ? '✓ Enviado / Sent!' : translations.send}
         </Button>
 
         {status === 'success' && (
-          <p className="text-center font-sans text-body-lg text-primary">
-            ¡Mensaje enviado! / Message sent!
-          </p>
+          <div className="p-4 bg-primary-container rounded-lg border border-primary/20">
+            <p className="text-center font-sans text-body-lg text-primary font-semibold">
+              ✓ ¡Mensaje enviado correctamente! / Message sent successfully!
+            </p>
+            <p className="text-center font-sans text-body-md text-on-surface/70 mt-2">
+              Te responderé pronto / I'll reply soon
+            </p>
+          </div>
+        )}
+
+        {status === 'error' && (
+          <div className="p-4 bg-red-50 rounded-lg border border-red-200">
+            <p className="text-center font-sans text-body-lg text-red-600 font-semibold">
+              ✗ Error al enviar / Error sending
+            </p>
+            <p className="text-center font-sans text-body-md text-red-600/70 mt-2">
+              Por favor intenta de nuevo / Please try again
+            </p>
+          </div>
         )}
       </form>
     </Card>
