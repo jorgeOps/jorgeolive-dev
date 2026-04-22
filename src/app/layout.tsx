@@ -56,9 +56,9 @@ export const metadata: Metadata = {
     siteName: 'Jorge Olive',
     images: [
       {
-        url: '/og-image.png',
-        width: 1200,
-        height: 630,
+        url: 'https://jorgeolive.com/og-image.png',
+        width: 2752,
+        height: 1536,
         alt: 'Jorge Olive - Diseño Web Personalizado',
       },
     ],
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     title: 'Jorge Olive - Diseño Web Personalizado',
     description: 'Diseño web personalizado para negocios que quieren destacar',
     creator: '@jorgeolive',
-    images: ['/og-image.png'],
+    images: ['https://jorgeolive.com/og-image.png'],
   },
   robots: {
     index: true,
