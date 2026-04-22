@@ -13,8 +13,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Jorge Olive - Diseño Web Personalizado',
     description: 'Desarrollo sitios web únicos y personalizados para pequeños negocios',
-    url: '/es',
+    url: 'https://jorgeolive.com/es',
     locale: 'es_ES',
+    type: 'website',
+    siteName: 'Jorge Olive',
+    images: [
+      {
+        url: 'https://jorgeolive.com/og-image.png',
+        width: 2752,
+        height: 1536,
+        alt: 'Jorge Olive - Diseño Web Personalizado',
+      },
+    ],
   },
 };
 

@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Contact - Jorge Olive',
     description: 'Contact me to create the perfect website for your business',
+    url: 'https://jorgeolive.com/en/contact',
+    type: 'website',
+    siteName: 'Jorge Olive',
+    images: [
+      {
+        url: 'https://jorgeolive.com/og-image.png',
+        width: 2752,
+        height: 1536,
+        alt: 'Jorge Olive - Custom Web Design',
+      },
+    ],
   },
 };
 

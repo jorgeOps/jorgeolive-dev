@@ -6,6 +6,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Servicios de Diseño Web - Jorge Olive',
     description: 'Web básica, web avanzada con backend, y gestión SEO para tu negocio',
+    url: 'https://jorgeolive.com/es/services',
+    type: 'website',
+    siteName: 'Jorge Olive',
+    images: [
+      {
+        url: 'https://jorgeolive.com/og-image.png',
+        width: 2752,
+        height: 1536,
+        alt: 'Jorge Olive - Diseño Web Personalizado',
+      },
+    ],
   },
 };
 

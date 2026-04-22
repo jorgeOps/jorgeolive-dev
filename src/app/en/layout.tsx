@@ -13,8 +13,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Jorge Olive - Custom Web Design',
     description: 'I build unique, custom websites for small businesses',
-    url: '/en',
+    url: 'https://jorgeolive.com/en',
     locale: 'en_US',
+    type: 'website',
+    siteName: 'Jorge Olive',
+    images: [
+      {
+        url: 'https://jorgeolive.com/og-image.png',
+        width: 2752,
+        height: 1536,
+        alt: 'Jorge Olive - Custom Web Design',
+      },
+    ],
   },
 };
 
